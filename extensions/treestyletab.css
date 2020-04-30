@@ -1,0 +1,45 @@
+#tabbar tab-item:not(:hover) tab-closebox {
+  display: none;
+}
+:root.right tab-item tab-twisty {
+  order: -1;
+}
+:root.right tab-item tab-closebox {
+  order: 10000;
+}
+tab-closebox::after {
+  content: "x";
+  background: none;
+  line-height: 1;
+  mask: none;
+  text-align: center;
+  width: 1.3em;
+}
+
+.label-content {
+  padding-top: 2px !important;
+  margin-left: 3px !important;
+}
+
+.newtab-button-box {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 20px;
+}
+
+.newtab-button {
+  margin-left: -40px;
+}
+
+tab-item tab-twisty {
+  margin-right: -1em;
+  opacity: 0 !important;
+  position: relative;
+  z-index: 10000;
+}
+
+.contextual-identity-marker {
+  width: 1px !important;
+}

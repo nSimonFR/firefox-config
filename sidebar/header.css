@@ -1,0 +1,13 @@
+#sidebar-header {
+  color: white !important;
+  background: black !important;
+}
+
+#sidebar-icon {
+  width: 0 !important;
+}
+
+#sidebar-box[sidebarcommand="treestyletab_piro_sakura_ne_jp-sidebar-action"]
+  #sidebar-close {
+  display: none !important;
+}

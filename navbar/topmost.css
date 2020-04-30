@@ -1,0 +1,30 @@
+/* Nav bar on top */
+#navigator-toolbox toolbar:not(#nav-bar):not(#toolbar-menubar) {
+  -moz-box-ordinal-group: 10 !important;
+}
+
+/* indicators - hide  */
+.private-browsing-indicator {
+  display: none !important;
+}
+.accessibility-indicator {
+  display: none !important;
+}
+
+/* window controls hide*/
+#TabsToolbar #window-controls {
+  display: none !important;
+}
+
+/* caption buttons - hide */
+*|*:root[tabsintitlebar]:not([inFullscreen="true"])
+  #toolbar-menubar[autohide="true"]
+  ~ #TabsToolbar
+  .titlebar-buttonbox-container {
+  display: none !important;
+}
+
+#nav-bar {
+  border-bottom: 1.2px solid #777777;
+  border-radius: 5px;
+}

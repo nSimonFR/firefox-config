@@ -1,0 +1,34 @@
+:root {
+  --thin-tab-width: 25px;
+  --wide-tab-width: 200px;
+}
+
+#sidebar-box:not([sidebarcommand="treestyletab_piro_sakura_ne_jp-sidebar-action"]) {
+  min-width: var(--wide-tab-width) !important;
+  max-width: var(--wide-tab-width) !important;
+}
+
+#sidebar-box[sidebarcommand="treestyletab_piro_sakura_ne_jp-sidebar-action"] {
+  position: relative !important;
+  overflow-x: hidden !important;
+  transition: all 50ms !important;
+  min-width: var(--thin-tab-width) !important;
+  max-width: var(--thin-tab-width) !important;
+  opacity: 1 !important;
+}
+
+#sidebar-box[sidebarcommand="treestyletab_piro_sakura_ne_jp-sidebar-action"]
+  + #sidebar-splitter {
+  display: none !important;
+}
+
+#sidebar-box[sidebarcommand="treestyletab_piro_sakura_ne_jp-sidebar-action"]:hover {
+  position: relative !important;
+  transition: all 500ms !important;
+  min-width: var(--wide-tab-width) !important;
+  max-width: var(--wide-tab-width) !important;
+  margin-right: calc(
+    (var(--wide-tab-width) - var(--thin-tab-width)) * -1
+  ) !important;
+  z-index: 1;
+}

@@ -1,0 +1,4 @@
+/* Hide tabs */
+#TabsToolbar {
+  display: none !important;
+}
