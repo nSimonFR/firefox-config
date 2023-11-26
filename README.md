@@ -1,5 +1,7 @@
 # My firefox configuration
 
+:warning: Sources moved to https://github.com/nSimonFR/nic-os/tree/main/home/firefox !
+
 ### Features:
 
 - Minimal dark theme
